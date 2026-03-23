@@ -9,6 +9,7 @@ size = Vector2(10.333334, 14)
 [node name="Character" type="CharacterBody2D" unique_id=86012057 node_paths=PackedStringArray("animation")]
 texture_filter = 1
 scale = Vector2(2, 2)
+collision_layer = 4
 script = ExtResource("1_cuyo6")
 animation = NodePath("AnimatedSprite2D")
 

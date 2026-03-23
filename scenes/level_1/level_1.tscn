@@ -1,0 +1,13 @@
+[gd_scene format=4 uid="uid://db4mtxiheyiqf"]
+
+[ext_resource type="PackedScene" uid="uid://cv8wbjvg4nv3f" path="res://scenes/edges/edges.tscn" id="1_7n1yb"]
+[ext_resource type="TileSet" uid="uid://b24kx0ioocvga" path="res://assets/sprites/scenery/scenary_tile_set.tres" id="1_ghvtn"]
+
+[node name="Level_1" type="Node2D" unique_id=1135608125]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1286159889]
+z_index = 1
+tile_map_data = PackedByteArray("AAD3/wYAAAADAAQAAAD4/wYAAAACAAQAAAD4/wUAAAACAAQAAAD3/wUAAAAFAAQAAAD3/wQAAAACAAYAAAD4/wQAAAAEAAYAAAA=")
+tile_set = ExtResource("1_ghvtn")
+
+[node name="Edges" parent="." unique_id=262160950 instance=ExtResource("1_7n1yb")]

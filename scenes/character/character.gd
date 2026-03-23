@@ -6,7 +6,8 @@ var _speed: float = 100.0
 var _jump_speed: float = -300.0
 
 func _physics_process(delta: float) -> void:
-	#velocity += get_gravity() * delta
+	if not is_on_floor():
+		velocity += get_gravity() * delta
 	
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 		_set_jump(_jump_speed)

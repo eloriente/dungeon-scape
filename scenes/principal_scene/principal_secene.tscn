@@ -1,13 +1,19 @@
 [gd_scene format=3 uid="uid://cggqx3ucdt1k4"]
 
+[ext_resource type="PackedScene" uid="uid://cv8wbjvg4nv3f" path="res://scenes/edges/edges.tscn" id="1_fqin8"]
 [ext_resource type="PackedScene" uid="uid://bm73ted7p1cay" path="res://scenes/character/character.tscn" id="1_gkjcf"]
+[ext_resource type="Script" uid="uid://dsrnvdhtft3pj" path="res://scenes/principal_scene/principal_secene.gd" id="1_p2200"]
+[ext_resource type="PackedScene" uid="uid://db4mtxiheyiqf" path="res://scenes/level_1/level_1.tscn" id="2_73r0n"]
 
 [node name="PrincipalSecene" type="Node2D" unique_id=762764457]
+script = ExtResource("1_p2200")
+levels = Array[PackedScene]([ExtResource("2_73r0n")])
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=605516228]
-position = Vector2(578, 325)
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1530762369]
+zoom = Vector2(2.6, 2.6)
 
 [node name="Character" parent="." unique_id=86012057 instance=ExtResource("1_gkjcf")]
-visible = false
-position = Vector2(579, 326)
-scale = Vector2(4, 4)
+position = Vector2(-192, 86)
+scale = Vector2(1.5, 1.5)
+
+[node name="Layout" parent="." unique_id=262160950 instance=ExtResource("1_fqin8")]
