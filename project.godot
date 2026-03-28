@@ -18,9 +18,18 @@ config/features=PackedStringArray("4.6", "GL Compatibility")
 boot_splash/bg_color=Color(0, 0, 0, 1)
 config/icon="uid://cutdy2re8jdqt"
 
+[autoload]
+
+BetterTerrain="*uid://cccpv4seyfg5u"
+GameEvents="*uid://dm653f15ob30h"
+
 [display]
 
 window/stretch/mode="canvas_items"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/better-terrain/plugin.cfg")
 
 [layer_names]
 

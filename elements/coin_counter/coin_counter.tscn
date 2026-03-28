@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://dhy5lexfjfofp"]
+
+[ext_resource type="Texture2D" uid="uid://s7jtmv6oebdp" path="res://assets/sprites/coin/Spinning Coin.png" id="1_df03b"]
+[ext_resource type="Script" uid="uid://dwmmrxiw8icv8" path="res://elements/coin_counter/coin_counter.gd" id="1_kij7n"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_df03b"]
+atlas = ExtResource("1_df03b")
+region = Rect2(64, 0, 16, 16)
+
+[node name="CoinCounter" type="Control" unique_id=1854895529 node_paths=PackedStringArray("coin_value")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kij7n")
+coin_value = NodePath("Label")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=945470331]
+texture_filter = 1
+position = Vector2(12.004196, 12)
+scale = Vector2(1.4994754, 1.5)
+texture = SubResource("AtlasTexture_df03b")
+
+[node name="Label" type="Label" parent="." unique_id=1292467500]
+texture_filter = 1
+layout_mode = 0
+offset_left = 32.0
+offset_right = 64.0
+offset_bottom = 23.0
+text = "0"

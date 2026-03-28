@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://b8to4vn2htwbx"]
+
+[ext_resource type="Script" uid="uid://dnmfw15an47g3" path="res://elements/destroyable_block/destroyable_block.gd" id="1_8cyj6"]
+[ext_resource type="Texture2D" uid="uid://c27w7rvon8lxk" path="res://assets/sprites/scenery/scenery.png" id="1_jdmpk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8cyj6"]
+atlas = ExtResource("1_jdmpk")
+region = Rect2(144, 192, 16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e2qo4"]
+size = Vector2(16, 16)
+
+[node name="DestroyableBlock" type="RigidBody2D" unique_id=1746091168 node_paths=PackedStringArray("raycast", "raycast_down", "block")]
+collision_layer = 17
+collision_mask = 5
+lock_rotation = true
+freeze = true
+script = ExtResource("1_8cyj6")
+raycast = NodePath("RayCast2D")
+raycast_down = NodePath("RayCast2D2")
+block = NodePath(".")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=786708826]
+texture_filter = 1
+texture = SubResource("AtlasTexture_8cyj6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=828017758]
+texture_filter = 1
+shape = SubResource("RectangleShape2D_e2qo4")
+
+[node name="RayCast2D2" type="RayCast2D" parent="." unique_id=907385668]
+target_position = Vector2(0, 14)
+collision_mask = 4
+
+[node name="RayCast2D" type="RayCast2D" parent="." unique_id=234053035]
+target_position = Vector2(0, -14)
+collision_mask = 4

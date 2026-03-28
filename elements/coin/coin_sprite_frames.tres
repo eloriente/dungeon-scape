@@ -1,0 +1,67 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://cdpwiy0o16qvr"]
+
+[ext_resource type="Texture2D" uid="uid://s7jtmv6oebdp" path="res://assets/sprites/coin/Spinning Coin.png" id="1_3vwvc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_npaoe"]
+atlas = ExtResource("1_3vwvc")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tqxu7"]
+atlas = ExtResource("1_3vwvc")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nwo5c"]
+atlas = ExtResource("1_3vwvc")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vxsyb"]
+atlas = ExtResource("1_3vwvc")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ymbx5"]
+atlas = ExtResource("1_3vwvc")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4eb5l"]
+atlas = ExtResource("1_3vwvc")
+region = Rect2(80, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mt08n"]
+atlas = ExtResource("1_3vwvc")
+region = Rect2(96, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wrj4n"]
+atlas = ExtResource("1_3vwvc")
+region = Rect2(112, 0, 16, 16)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_npaoe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tqxu7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nwo5c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vxsyb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ymbx5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4eb5l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mt08n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wrj4n")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 8.0
+}]

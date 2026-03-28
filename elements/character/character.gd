@@ -3,7 +3,7 @@ extends CharacterBody2D
 @export var animation: AnimatedSprite2D
 
 var _speed: float = 100.0
-var _jump_speed: float = -300.0
+var _jump_speed: float = -250.0
 
 func _physics_process(delta: float) -> void:
 	if not is_on_floor():

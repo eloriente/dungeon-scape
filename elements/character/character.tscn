@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bm73ted7p1cay"]
 
-[ext_resource type="SpriteFrames" uid="uid://dqv5n8bdurdu0" path="res://scenes/character/character_sprite_frames.tres" id="1_6nn2t"]
-[ext_resource type="Script" uid="uid://b4pk6e135htvd" path="res://scenes/character/character.gd" id="1_cuyo6"]
+[ext_resource type="SpriteFrames" uid="uid://dqv5n8bdurdu0" path="res://elements/character/character_sprite_frames.tres" id="1_6nn2t"]
+[ext_resource type="Script" uid="uid://b4pk6e135htvd" path="res://elements/character/character.gd" id="1_cuyo6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6nn2t"]
 size = Vector2(10.333334, 14)
@@ -21,6 +21,5 @@ shape = SubResource("RectangleShape2D_6nn2t")
 position = Vector2(-4.5, 0.5)
 scale = Vector2(0.927, 1)
 sprite_frames = ExtResource("1_6nn2t")
-animation = &"jump"
-frame_progress = 0.96189857
+animation = &"idle"
 offset = Vector2(4, 0)
